@@ -1,0 +1,53 @@
+/* Basic styling */
+h1 {
+    text-align: center;
+}
+
+body {
+    background-color:#f5f5f5; /* color for good contrast  */
+}
+
+.navbar {
+    background-color: #333;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin: 0 20px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: white;
+  }
+
+  /* Responsive behavior */
+
+  @media (max-width: 768px) { /* the @media rule in CSS is used to apply styles based on the characteristics of the device or screen on which the content is being displayed. Allows you to create layouts and styles that adapt to different screen sizes and devices. */
+    .menu {
+      flex-direction: column;
+      align-items: center; /* change layout for smaller screens */
+    }
+  
+    .menu a {
+        color:aqua; /* change color for smaller screens */
+    }
+
+    .menu li {
+      margin: 10px 0;
+    }
+  }
+  
+
+
+  /* Demo Execution:
+
+    -Show the initial navigation menu with horizontal items aligned using Flexbox.
+    -Gradually reduce the width of the browser window to demonstrate the responsive behavior. As the width decreases, the menu items will stack vertically.
+    -Emphasize how Flexbox is making it easy to create a responsive layout without complex CSS positioning. */
